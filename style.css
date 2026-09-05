@@ -1,0 +1,147 @@
+:root {
+    --bg-dark: #141414;
+    --text-dark: #ECEDEE
+}
+
+main{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+    font-family: system-ui, sans-serif;
+    scroll-behavior: smooth;
+}
+
+#hero {
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.links a {
+    color: var(--text-dark);
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.links a {
+    font-size: 24px;
+    margin: 0 12px;
+    transition: opacity 0.2s;
+}
+
+.links a:hover {
+    opacity: 0.7;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.top-title h1 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.top-title p {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.Social-contact {
+    display: flex;
+    gap: 16px;
+}
+
+.Social-contact a {
+    color: var(--text-dark);
+    font-size: 20px;
+    transition: opacity 0.2s;
+}
+
+.Social-contact a:hover {
+    opacity: 0.7;
+}
+
+.about-me {
+    background-color: #242323;
+    border: 1px solid #2E2D2D;
+    padding: 24px;
+    border-radius: 12px;
+}
+
+.about-me h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.about-me p {
+    font-size: 14px;
+    opacity: 0.8;
+    line-height: 1.5;
+}
+
+
+
+
+.project-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none; 
+    color: inherit5; 
+    background-color: rgba(255, 255, 255, 0.02); 
+    border: 1px solid transparent;
+    padding: 16px;
+    border-radius: 8px;
+    margin-top: 12px;
+    transition: all 0.2s ease-in-out; 
+}
+
+.project-info h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 4px;
+}
+
+.project-info p {
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+.project-icon {
+    font-size: 14px;
+    opacity: 0.4;
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+.project-item:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.1); 
+}
+
+.project-item:hover .project-icon {
+    opacity: 1;
+    transform: translate(2px, -2px); 
+}

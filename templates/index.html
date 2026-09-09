@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MSH</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -15,19 +15,26 @@
                 <p>Backend Software Developer</p>
             </div>
             <div class="Social-contact">
-                <a href="https://github.com/Mohammed-Alhashmy" target="_blank"><i class="fa-brands fa-github"></i>></a>
+                <a href="https://github.com/Mohammed-Alhashmy"><i class="fa-brands fa-github"></i></a>
                 <a href="mailto:msh.alhashmy@gmail.com"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </header>
 
         <section class="about-me">
             <h2>About Me</h2>
-            <p>I live in Iraq now a backend developer focused on building robust systems, learning through practical code, and structuring clean databases.</p>
+            <p>I live in Iraq now a backend developer focused on building robust systems, learning through practical code, and structuring clean databases .</p>
+            <p>And I am studying business administration at the university.</p>
         </section>
 
         <section class="Skills">
             <h2>Skills</h2>
-            <p>Python, SQLite, Git, Flask, Problem Solving.</p>
+            <ul class="skills-list">
+                <li><i class="fa-brands fa-python"></i> <span>Python</span></li>
+                <li><i class="fa-solid fa-database"></i> <span>SQLite</span></li>
+                <li><i class="fa-brands fa-git-alt"></i> <span>Git</span></li>
+                <li><i class="fa-solid fa-flask"></i> <span>Flask</span></li>
+                <li><i class="fa-solid fa-puzzle-piece"></i> <span>Problem Solving</span></li>
+            </ul>
         </section>
 
         <section class="projects">
